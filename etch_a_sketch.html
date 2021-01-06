@@ -1,118 +1,16 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <style>
-            #container{
-                display: grid;
-                grid-template-columns: repeat(40,auto);
-                grid-template-rows:repeat(40, auto);
-                justify-content: center;
-
-
-            }
-            #theDiv{
-                border-color: grey;
-                padding: 4px;
-                height: 0px;
-                width: 0px;
-                border-style: solid;
-                border-width: 1px;
-                 }
-           
-            h1{
-                text-align: center;
-                color: white;
-            }
-
-            body{
-                background-color: black;
-            }
-
-            button{
-                display: inline;
-                background-color: black;
-                color: white;
-            }
-
-            h2{
-                text-align: center;
-            }
-
-            .classDiv{
-                background-color:white;
-
-            }
-        </style>
+        <link href="style.css" rel="stylesheet">
+        
     </head>
     <body>
         <h1>That is a Etch&Sketch project!</h1>
         <h2><button id="button">New sketch</button></h2>
         <p id="container"></p>
 
-        <script>
-            
-              content.addEventListener("mouseover", function( event ) {
-              event.target.style.backgroundColor = "black";
-            });
+        <script src="main.js">    
 
-            
-            function createDiv(){
-                const container = document.querySelector('#container');
-                const content = document.createElement('div');
-                container.appendChild(content);
-
-                content.setAttribute("id", "theDiv");         
-                content.classList.add("classDiv");
-                let y = document.getElementById("theDiv");
-            }         
-            
-
-
-            const btn = document.getElementById("button");
-            let userNumber = 1600;
-            let x = document.getElementsByClassName("classDiv");
-            let items= 1600
-        
-            for (let i=0; i<1600; i++){
-              createDiv(); }
-
-            btn.addEventListener('click', () => {
-               
-                              
-                userNumber = prompt("How many squares do you want?");
-                if (userNumber>100){alert("Too, big number, try again and insert number under 100")}
-                else{
-
-                    for(i=0; i<items; i++){
-                    container.removeChild(theDiv);  
-                    }
-
-                userNumberConverted = parseInt(userNumber);
-                container.setAttribute('style', 'grid-template-columns: repeat(' + userNumberConverted + ', auto)');
-                
-
-                items = userNumber*userNumber; 
-                createGrid();
-                return;
-                }
-            });
-            
-            function createGrid(){
-                for (let i=0; i<items; i++){
-                createDiv();
-                
-                }
-            }
-
-
-
-
-
-
-            
-            
-
-            
         </script>
     </body>
 </html>

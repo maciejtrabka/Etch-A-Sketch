@@ -1,0 +1,36 @@
+
+            #container{
+                display: grid;
+                grid-template-columns: repeat(40,auto);
+                grid-template-rows:repeat(40, auto);
+                justify-content: center;
+
+
+            }
+            #theDiv{
+                padding: 4px;
+                 }
+           
+            h1{
+                text-align: center;
+                color: white;
+            }
+
+            body{
+                background-color: black;
+            }
+
+            button{
+                display: inline;
+                background-color: black;
+                color: white;
+            }
+
+            h2{
+                text-align: center;
+            }
+
+            .classDiv{
+                background-color:white;
+
+            }
